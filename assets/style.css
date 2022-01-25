@@ -1,0 +1,275 @@
+body{
+    background-color:lightgoldenrodyellow;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* ---------------------------top div of the page ----------------------- */
+/* Get all user heading  */
+#get-users {
+    background-color: yellow;
+    margin-top: 5px;
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* fetch button style  */
+#fetch {
+    margin-top: 10px;
+    padding: 10px 50px;
+    background-color: tomato;
+    display: inline-block;
+}
+
+
+
+/*---------- user table  styles---------------- */
+#data-table, #table-body {
+    
+    margin: auto;
+    background-color: yellow;
+    border: black solid 1px;
+    
+}
+#table-body tr {
+    background-color: transparent;
+}
+
+
+/* -----------------------table heading and table data styles------------------------ */
+th,td{
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+/* ---------------delete button---------------- */
+.fa-trash{
+    color: red;
+    margin-left: 20px;
+}
+
+
+
+/* button styles  */
+button{
+    background-color: rgb(0, 255, 179);
+}
+
+/* hover on button  */
+button:hover{
+    background-color: rgb(240, 146, 6);
+    color: white;
+    box-shadow: rgb(179, 179, 179) 3px 3px;
+}
+
+
+
+
+
+
+/* ---------------------------------edit box ------------------------------------- */
+#edit-box{
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    width: 30%;    
+    min-width: 350px;
+    left: 33%;
+    top: 20%;
+    padding: 20px 0px;
+}
+
+/* heading in edit box  */
+#edit-box h3{
+    width: 100%;
+    text-align: center;
+}
+
+/* user image in edit box  */
+#edit-box img{
+    width: 100%;
+    text-align: center;
+    padding: 5px 30%;
+}
+
+/* input fields in edit box  */
+#edit-box input{
+    width: 70%;
+    margin: 5px 15%;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 15px;
+}
+
+/* update button in edit box  */
+#edit-box button{
+    width: 70%;
+    margin: 5px 15%;
+    background-color: tomato;
+    padding: 2px 10px;
+}
+
+#bottomNav{
+    display: inline; 
+    padding-right: 20%; 
+    margin-top: 10px;
+}
+
+#container{
+    padding: 0px 10%;
+}
+
+#delete-all-btn{
+    margin-left: 20%;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+label p{
+    display: inline-block;
+}
+
+#dataError{
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+
+#animImg{
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+}
+
+@media only screen and (max-width:650px){
+    th,td{
+        font-size: 12px;
+        width:auto;
+        padding-left: 5px;
+    }
+
+    label span {
+        height: 10px;
+        width: 10px;
+    }
+    #data-table{
+        padding: 10px;
+    }
+    #get-users {
+        margin-top: 0px;
+        padding: 5px;
+    }
+    div p {
+        height: 18px;
+        width: 18px;
+        font-size: 10px;
+    }
+
+        
+    #delete-select{
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    #fetch {
+        margin-top: 10px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+        margin-top: 20px;
+    }
+
+    #users-table{
+        border: none;
+    }
+
+    #edit-box{
+        left: 15%;
+        top: 20%;
+    }
+    table.dataTable tbody th, table.dataTable tbody td, table.dataTable thead th, table.dataTable thead td {
+        padding: 2px 5px;
+    }
+    #container{
+        padding: 0px 3%;
+    }
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        /* min-width: 1.5em; */
+        padding:  1px;
+        margin-left: 2px;
+        border-radius: 2px;
+    }
+    button {
+        margin-top: 5px;
+        padding: 2px;
+        font-size: 12px;
+    }
+    #dataError{
+        height: 50%;
+        width: 90%;
+        left: 5%;
+    }
+    
+    #animImg{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width:400px){
+    th,td{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    #edit-box{
+        min-width: 250px;
+        padding: 10px 0px;
+    }
+    
+    /* heading in edit box  */
+    #edit-box h3{
+        font-size: 18px;
+    }
+    
+    /* input fields in edit box  */
+    #edit-box input{
+        width: 80%;
+        margin: 5px 10%;
+        padding: 1px 5px;
+        font-size: 12px;
+    }
+    
+    /* update button in edit box  */
+    #edit-box button{
+        width: 70%;
+        margin: 5px 15%;
+        border-radius: 10px;
+        padding: 2px 5px;
+        font-size: 12px;
+    }
+
+    #container{
+        padding: 0px;
+    }
+    table.dataTable tbody th, table.dataTable tbody td {
+        padding: 2px ;
+    }
+    
+}
